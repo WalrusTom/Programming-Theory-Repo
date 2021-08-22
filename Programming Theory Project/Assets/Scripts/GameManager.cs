@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
         get { return m_charname; }
         set { m_charname = SetName(value); }
     }
+    public string characterUsed;
 
 
 

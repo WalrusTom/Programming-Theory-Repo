@@ -505,6 +505,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameDisplay: {fileID: 31300415}
+  squirrelObject: {fileID: 1636861111}
+  grasshopperObject: {fileID: 2040827507}
 --- !u!1 &609027922
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,7 +701,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1636861112
 SpriteRenderer:
   m_ObjectHideFlags: 0

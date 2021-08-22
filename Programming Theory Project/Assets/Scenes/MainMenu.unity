@@ -808,7 +808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f76e32e95eca3964a841636752d7eda7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSelected: 0
+  m_isSelected: 0
   sameListButtons:
   - {fileID: 1516533657}
   - {fileID: 1265658485}
@@ -1257,7 +1257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f76e32e95eca3964a841636752d7eda7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSelected: 0
+  m_isSelected: 0
   sameListButtons:
   - {fileID: 1516533657}
   - {fileID: 1265658485}
@@ -1579,6 +1579,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1997769771}
   nameInput: {fileID: 388517126}
+  squirrelButton: {fileID: 1516533657}
+  grasshopperButton: {fileID: 1265658485}
 --- !u!1 &1824807199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,6 +1744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_charname: default
+  characterUsed: 
 --- !u!4 &1997769772
 Transform:
   m_ObjectHideFlags: 0
