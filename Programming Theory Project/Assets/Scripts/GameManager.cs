@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private string m_charname = "default";
-    public string charname
+    public string charname //ENCAPSULATION
     {
         get { return m_charname; }
         set { m_charname = SetName(value); }

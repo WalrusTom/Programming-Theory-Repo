@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GrasshopperController : AnimalController
+public class GrasshopperController : AnimalController //INHERITANCE
 {
     private float jumpdir;
-protected override void Jump()
+protected override void Jump() //POLYMORPHISM
     {
         if (movingRight)
         {

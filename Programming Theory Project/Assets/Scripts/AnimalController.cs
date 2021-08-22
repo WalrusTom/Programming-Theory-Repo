@@ -21,8 +21,8 @@ public class AnimalController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MoveAnimal();
-        CheckInput();
+        MoveAnimal(); //ABSTRACTION
+        CheckInput(); //ABSTRACTION
     }
 
     void CheckInput()

@@ -7,7 +7,7 @@ public class AnimalSelectButton : MonoBehaviour
 {
     [SerializeField]
     private bool m_isSelected;
-    public bool isSelected
+    public bool isSelected //ENCAPSULATION
     {
         get { return m_isSelected; }
         set { m_isSelected = value; }
