@@ -10,6 +10,7 @@ public class AnimalController : MonoBehaviour
     [SerializeField] protected Rigidbody2D animalRb;
     [SerializeField] public float jumpForce;
     [SerializeField] public int runSpeed;
+    public float jumpLevel;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class AnimalController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (transform.position.y < -1.2)
+            if (transform.position.y < jumpLevel)
             {
                 Jump();
             }
@@ -52,14 +53,16 @@ public class AnimalController : MonoBehaviour
         {
             movingRight = true;
         }
-
+        
         if (movingRight)
         {
-            animalRb.transform.Translate(Vector2.right * runSpeed * Time.deltaTime);
+            animalRb.AddForce(Vector2.right * Math.Max(0,(runSpeed - Math.Abs(animalRb.velocity.x))));
         }
         else
         {
-            animalRb.transform.Translate(Vector2.left * runSpeed * Time.deltaTime);
+            animalRb.AddForce(Vector2.left * Math.Max(0, (runSpeed - Math.Abs(animalRb.velocity.x))));
         }
+
+        
     }
 }
