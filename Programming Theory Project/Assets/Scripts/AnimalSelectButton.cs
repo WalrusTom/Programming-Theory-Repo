@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class AnimalSelectButton : MonoBehaviour
 {
-    public bool isSelected;
+    [SerializeField]
+    private bool isSelected;
     public List<AnimalSelectButton> sameListButtons;
     
     // Start is called before the first frame update
